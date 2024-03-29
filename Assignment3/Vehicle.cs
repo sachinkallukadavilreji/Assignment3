@@ -6,18 +6,16 @@ using System.Threading.Tasks;
 
 namespace Assignment3
 {
-    internal class Vehicle
+    abstract class Vehicle
     {
-        private string model {  get; set; }
-        private string manufactureYear { get; set; }
-        private string rentalPrice { get; set; }
+        public string model {  get; set; }
+        public string manufactureYear { get; set; }
+        public string rentalPrice { get; set; }
 
-        public void displayDetails()
-        {
-            Console.WriteLine("Model name is : " + model);
-            Console.WriteLine("Manufacture year is : " + manufactureYear);
-            Console.WriteLine("Rental price is : " + rentalPrice);
-        }
+        public abstract void displayDetails();
+        
+
+        
 
     }
 }
